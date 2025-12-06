@@ -4,7 +4,7 @@ library(shinydashboard)
 library(visNetwork)
 library(readxl)
 library(dplyr)
-
+library(DT)
 # UI ----------------------------------------------------
 ui <- dashboardPage(
   dashboardHeader(title = "Spruce Budworm"),
@@ -104,7 +104,7 @@ ui <- dashboardPage(
                 )
               )
       ),      
-      # Path analysis diagram section ----
+      # Path analysis diagram section -----
       tabItem(tabName = "path_analyis_diagram",
               fluidRow(
                 box(width = 3, title = "Controls", solidHeader = TRUE, status = "primary",
