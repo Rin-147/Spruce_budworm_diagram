@@ -79,7 +79,7 @@ ui <- dashboardPage(
                           "Precipitation",
                           "Humidity",
                           "Wind",
-                          "Public participation",
+                          "Public perception",
                           "Mi’kmaq Nation"
                         ), function(lbl) {
                           tags$div(
