@@ -13,7 +13,7 @@ ui <- dashboardPage(
       menuItem("About", tabName = "about", icon = icon("info-circle")),
       menuItem("System Diagram", tabName = "diagram", icon = icon("project-diagram")),
       menuItem("Quantified Diagram", tabName = "path_analyis_diagram", icon = icon("project-diagram")),
-      menuItem("Sources table", tabName = "table", icon = icon("table"))
+      menuItem("Relationships table", tabName = "table", icon = icon("table"))
     )
   ),
   dashboardBody(
@@ -26,24 +26,29 @@ ui <- dashboardPage(
                 The objectives set forward by our team are to illustrate and quantify system linkages, to identify research gaps, 
                 and to situate our findings in the context of climate change."),
               h4("Systems Diagram"),
-              p("In the first systems diagram, all the connections are illustrated, and research gaps are shown in a separate panel. 
+              p("In the first systems diagram, all the connections are illustrated, and research gaps are shown in a separate panel as
+              variables that were not connected through the system. 
                 The arrows between the different relationships represent either a positive relationship (green), a negative 
                 relationship (red), or one that cannot be assigned a label (black). The user can click on different variables to obtain 
-                a definition, move them around, and clearly see which other variables are connected to them."),
-              h4("Path Analysis Diagram"),
-              p("The second systems diagram, called “Path Analysis Diagram,” displays specifically the biotic and abiotic variables 
+                a definition, move them around, and clearly see which other variables are connected to them to understand their importance 
+                within the system."),
+              h4("Quantified Diagram"),
+              p("The second systems diagram displays specifically the biotic and abiotic variables 
                 that influence the spruce budworm in some way. These relationships were quantified through a literature review and 
-                path analysis. The thickness of each arrow represents the strength of the relationship, which is the weighted z-score.When
+                path analysis. The thickness of each arrow represents the strength of the relationship, which is the weighted Z score. When
                 clicking on an arrow, a square indicating the weighted Z scores will appear. A thicker arrow represents a stronger relationship 
                 and vice versa. 
                 The level of transparency reflects the uncertainty associated with the relationship, as determined by the Tau squared value, 
-                for variables where more than one paper was associated with it. For the others, a tau squared of 0.01 was awarded. This is 
-                the lowest certainty, given that there was only one paper about the relationship.
+                for variables which had more than one paper associated with their relationships. For the others, a Tau squared value of 0.01 was awarded. 
+                This is the lowest certainty, given that there was only one paper about the relationship. This uncertainty represents the second type of 
+                gap that we found within this system; not enough literature to sufficiently support those linkages.
                 Given that the effect of fire on non-host abundance is very complex and requires mutliple interactions, we were not able 
                 to quanitify it in this diagram, but felt that its importance could not be ignored, so this relationship is represented by 
                 a grey arrow. 
                 The variables on the left represent the exogenous variables, temperature and temperature fluctuations, in order to see
-                how their effects flow through the system"),
+                how their effects flow through the system.
+                Once again, users are encouraged to click on the variables, to see which are connected to which, and to understand the strength
+                and uncertainty of these connections by clicking on the arrows themselves."),
               h4("Relationships Table"),
               p("A table with the papers we researched for the path analysis diagram, and their respective weighted Z scores and Tau squared values, 
               is available for consultation at the end.")
